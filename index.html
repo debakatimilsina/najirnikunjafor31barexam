@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NajirNikunja</title>
+  <style>
+    body {
+      font-family:Calibri;
+        }
+    /* Style for the toggle buttons */
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    /* Style for the active (toggled) buttons */
+    button.active {
+      background-color: #28a745;
+    }
+    textarea {
+      width: 80%;
+      max-width: 100%;
+      /* Ensure it doesn't exceed the viewport width */
+      box-sizing: border-box;
+      /* Include padding and border in the width calculation */
+    }
+    #input1 {
+      width: 20%;
+      box-sizing: border-box;
+      /* Include padding and border in the width calculation */
+    }
+    /* Add CSS for green and red backgrounds based on the match */
+    .match {
+      background-color: #28a745;
+      /* Green */
+    }
+    .no-match {
+      background-color: #dc3545;
+      /* Red */
+    }
+    /* New style for the output */
+    /* New style for the output */
+    .jkl-details {
+      display: contents;
+      /*this stop the detail content from displaying atutomatically.remove it if needed*/
+     
+      font-style: italic;
+
+      /* Add other styles asneeded */
+    }
+    .details-content {
+      font-size: large;
+      font-style: italic;
+      /* Add other styles asneeded */
+    }
+    #abbr {
+      display: none;
+    }
+
+    .highlight {
+            color: red;
+        }
+
+        .tab1{
+          padding-left: 20px;
+        font-size:medium;
+       
+        }
+        .tab2{
+          padding-left: 40px;
+     
+        }
+  </style>
+   <style>
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .blinking-hand {
+        font-size: 24px;
+        animation: blink 1.5s infinite;
+        cursor: pointer;
+        display: block; /* Display the hand below the text */
+        text-align: center;
+    }
+    #svg{
+      display:contents;
+    }
+
+    #svg-container{
+      text-align: center;
+      display: block;
+    }
+    #center{
+
+      text-align: center;
+    }
+    h2{
+        text-align: center;
+      
+    }
+
+    #showAllJKLButton {
+    float: right;
+  }
+  #contact{
+    color:brown;
+    font-weight: bold;
+  }
+  #right{
+    text-align: right;
+  }
+</style>
+</head>
+<body>
+  <h2>NAJIRNIKUNJA <br>for 31st Advocate License Exam</h2>
+ 
+
+    <p>
+             <a href="javascript:void(0);" onclick="toggleSVG()"> 
+      <span class="blinking-hand" style="color: red;">Click👆Me</span></a>
+      <!-- Move the hand below the link -->
+    </p>
+
+    <div id="svg-container" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="400" height="200">
+        <!-- Background sky with stars and color animation -->
+        <rect x="0" y="0" width="400" height="200" fill="deepskyblue">
+          <animate attributeName="fill" values="deepskyblue;darkblue;midnightblue;black;midnightblue;darkblue;deepskyblue" dur="30s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="70" cy="70" r="30" fill="yellow" />
+
+        <!-- Crescent Shape -->
+        <circle cx="58" cy="70" r="30" fill="deepskyblue">
+          <animate attributeName="fill" from="30" to="32" values="deepskyblue;darkblue;midnightblue;black;midnightblue;darkblue;deepskyblue" dur="30s" repeatCount="indefinite" />
+        </circle>
+        <!-- Text -->
+        <text id="blinkingText" x="140" y="100" font-family="Arial, sans-serif" font-size="15" fill="white" opacity="0">
+        ३१ औं बार परीक्षाको ब्रह्मास्त्र
+          <tspan x="140" dy="30" font-size="18"> ........  नजिरनिकुञ्ज........</tspan>
+          <tspan x="100" dy="15" font-size="12" opacity="1">A Booster Dose for Bar Exam Preparation
+             </tspan>
+             <tspan x="100" dy="15" font-size="12" opacity="1">
+               </tspan><br>  
+           <span id="contact"> For Complete SOFT FILE of NajirNikunja<br>
+              Contact us @ 9846264496 </span>
+
+        </text>
+             
+     
+            <!-- Fireworks (crackers) -->
+        <circle cx="100" cy="80" r="1" fill="yellow">
+          <animate attributeName="r" from="1" to="3" dur="1s" begin="2s" repeatCount="indefinite" />
+          <animate attributeName="cy" from="80" to="40" dur="1s" begin="2s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="110" cy="85" r="1" fill="red">
+          <animate attributeName="r" from="1" to="3" dur="1s" begin="2.5s" repeatCount="indefinite" />
+          <animate attributeName="cy" from="85" to="45" dur="1s" begin="2.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="120" cy="80" r="1" fill="blue">
+          <animate attributeName="r" from="1" to="3" dur="1s" begin="3s" repeatCount="indefinite" />
+          <animate attributeName="cy" from="80" to="40" dur="1s" begin="3s" repeatCount="indefinite" />
+        </circle>
+        <!-- Additional Fireworks -->
+        <circle cx="150" cy="90" r="1" fill="yellow">
+          <animate attributeName="r" from="1" to="3" dur="1s" begin="3.5s" repeatCount="indefinite" />
+          <animate attributeName="cy" from="90" to="30" dur="1s" begin="3.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="160" cy="95" r="1" fill="red">
+          <animate attributeName="r" from="1" to="3" dur="1s" begin="4s" repeatCount="indefinite" />
+          <animate attributeName="cy" from="95" to="35" dur="1s" begin="4s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="170" cy="90" r="1" fill="blue">
+          <animate attributeName="r" from="1" to="3" dur="1s" begin="4.5s" repeatCount="indefinite" />
+          <animate attributeName="cy" from="90" to="30" dur="1s" begin="4.5s" repeatCount="indefinite" />
+        </circle>
+        <!-- Cracker Animation -->
+        <rect x="0" y="120" width="400" height="2" fill="white">
+          <animate attributeName="width" from="400" to="0" dur="4s" begin="2s" fill="freeze" />
+        </rect>
+      </svg>
+    </div>
+    
+    <script>
+      // JavaScript code to toggle SVG visibility
+      function toggleSVG() {
+        const svgContainer = document.getElementById("svg-container");
+        svgContainer.style.display = svgContainer.style.display === "none" ? "block" : "none";
+        if (svgContainer.style.display === "block") {
+          animateText();
+        }
+      }
+    
+      // JavaScript code to make the text blink and change colors
+      const blinkingText = document.getElementById("blinkingText");
+    
+      function animateText() {
+        blinkingText.setAttribute("fill", "red");
+        blinkingText.setAttribute("opacity", "1");
+        setTimeout(() => {
+          blinkingText.setAttribute("fill", "green");
+          setTimeout(() => {
+            blinkingText.setAttribute("fill", "blue");
+            setTimeout(() => {
+              blinkingText.setAttribute("fill", "white");
+              blinkingText.setAttribute("opacity", "0");
+              setTimeout(animateText, 1000); // Repeat after 1 second
+            }, 1000);//pause for 0.5 sec
+          }, 1000);
+        }, 1000);
+      }
+    </script>
+
+
+        <p id="developedby"><u><b>Developed By:</b></u><br>Debaka Timilsina (MA, M.Ed, MPA, LL.B)<br>
+         advdebaka76@gmail.com <br>ऋषितर्पणि, २०८०
+        </p>  
+                 <a href="https://debakatimilsina.github.io/syllablesforbarexam.git.io/" target="_blank">SEE SYLLABLES HERE</a>  
+           <div style="text-align: center;"> <a  href="https://drive.google.com/file/d/1C9jcDgAjM_iZfgSzCL7J7FZGmDj_hW3Q/view?usp=drive_link" target="_blank" id="center">SEE SAMPLE of e-copy HERE</a></div>
+           <div style="text-align: right;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeLUF5SPh0atdU3e346OOutidLi4_vLf4rI9NAMGYAp0iZkdQ/viewform?usp=pp_url" target="_blank" id="right">FILL THE FORM HERE</a></div>
+
+  </footer>
+</body>
+</html>
